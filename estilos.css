@@ -1,0 +1,476 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff8f0;
+}
+
+/* MENÚ */
+
+nav{
+
+    background-color:#8b4513;
+
+    position:fixed;
+
+    width:100%;
+
+    z-index:100;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:18px 30px;
+
+}
+
+.logo{
+
+    position:absolute;
+
+    right:25px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:55px;
+
+    height:55px;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    justify-content:center;
+
+    list-style:none;
+
+    gap:35px;
+
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: yellow;
+}
+
+/* HEADER */
+
+header{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+header img{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.contenido-header{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,0.5);
+    padding: 30px;
+    border-radius: 20px;
+    animation: aparecer 2s;
+}
+
+.contenido-header h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.contenido-header p{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.boton{
+    background-color: #ffb347;
+    color: black;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton:hover{
+    background-color: white;
+}
+
+/* NOSOTROS */
+
+.nosotros{
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.nosotros h2{
+    font-size: 40px;
+    color: #8b4513;
+    margin-bottom: 30px;
+}
+
+.nosotros p{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.mision-vision{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.caja{
+    background-color: white;
+    padding: 30px;
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+.caja h3{
+    color: #8b4513;
+    margin-bottom: 15px;
+}
+
+.caja ul{
+
+    padding-left:30px;
+
+    text-align:left;
+
+}
+
+.caja li{
+
+    margin-bottom: 10px;
+
+  font-size: 20px;
+}
+
+/* PRODUCTOS */
+
+.productos{
+    padding: 80px 10%;
+    background-color: #ffe4c4;
+    text-align: center;
+}
+
+.productos h2{
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: #8b4513;
+}
+
+.galeria{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.producto{
+    background-color: white;
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+.producto:hover{
+    transform: scale(1.05);
+}
+
+.producto img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.producto h3{
+    margin: 15px 0;
+    color: #8b4513;
+}
+
+.producto p{
+    padding: 0 15px 20px;
+}
+
+/* CONTACTO */
+
+.contacto{
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.contacto h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #8b4513;
+}
+
+.contacto p{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.redes{
+    margin-top: 30px;
+}
+
+.redes a{
+    text-decoration: none;
+    background-color: #8b4513;
+    color: white;
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.redes a:hover{
+    background-color: black;
+}
+
+/* FORMULARIO */
+
+
+.formulario{
+
+    background-color: white;
+
+    max-width: 650px;
+
+    margin: 40px auto 0;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+
+    text-align: left;
+
+}
+
+.formulario h3{
+
+    color: #8b4513;
+
+    font-size: 28px;
+
+    text-align: center;
+
+    margin-bottom: 25px;
+
+}
+
+.formulario label{
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    color: #8b4513;
+
+}
+
+.formulario input,
+.formulario textarea{
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #d2b8a3;
+
+    border-radius: 8px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 16px;
+
+}
+
+.formulario textarea{
+
+    resize: vertical;
+
+}
+
+.formulario input:focus,
+.formulario textarea:focus{
+
+    outline: none;
+
+    border: 2px solid #8b4513;
+
+}
+
+.formulario button{
+
+    display: block;
+
+    margin: 10px auto 0;
+
+    background-color: #8b4513;
+
+    color: white;
+
+    padding: 14px 25px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+.formulario button:hover{
+
+    background-color: #a65d2a;
+
+    transform: scale(1.03);
+
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #8b4513;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ANIMACIÓN */
+
+@keyframes aparecer{
+
+    from{
+        opacity: 0;
+        transform: translate(-50%, -40%);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+@media (max-width:900px){
+
+    nav ul{
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap:15px;
+
+    }
+
+    .contenido-header{
+
+        width:90%;
+
+        padding:20px;
+
+    }
+
+    .contenido-header h1{
+
+        font-size:40px;
+
+    }
+
+    .contenido-header p{
+
+        font-size:18px;
+
+    }
+
+    .mision-vision{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .galeria{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .formulario{
+
+        width: 100%;
+
+        padding: 20px;
+
+    }
+
+    .formulario h3{
+
+        font-size: 24px;
+
+    }
+
+    .formulario input,
+    .formulario textarea{
+
+        font-size: 16px;
+
+    }
+
+    .formulario button{
+
+        width: 100%;
+
+    }
+}
